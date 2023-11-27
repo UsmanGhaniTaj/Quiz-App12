@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>quiz App</title>
+</head>
+
+<body>
+    <div class="contaira">
+        <div id="contairBox">
+            <div class="timer">
+                <p id="Min">01</p>
+                <p>:</p>
+                <p id="Sec">00</p>
+            </div>
+
+
+            <div class="ShowQuiz">
+                <h1 id="QuestionNomber"></h1>
+
+                <h3 id="Question"></h3>
+
+
+                <div class="InputRedio">
+                    <input type="radio" value="0" onclick="enable()" name="Options">
+                    <span id="Options1"></span>
+
+                    <input type="radio" value="1" onclick="enable()" name="Options">
+                    <span id="Options2"></span>
+
+                    <input type="radio" value="2" onclick="enable()" name="Options">
+                    <span id="Options3"></span>
+
+                    <input type="radio" value="3" onclick="enable()" name="Options">
+                    <span id="Options4"></span>
+                </div>
+
+                <div class="StrtButton">
+                    <button class="nextButton" disabled id="NextButton" onclick="Next()">Next</button>
+                </div>
+
+
+                <div class="resultButten">
+                    <button class="resultButten  hide" id="resultButton" onclick="Result()">Result</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="Table" id="ShowResult">
+            <table class="TableResult">
+                <tr>
+                    <td>Marks Obtained</td>
+                    <td id="MarksObtained"></td>
+                </tr>
+
+                <tr>
+                    <td>Correct Answer</td>
+                    <td id="CorrectAns"></td>
+                </tr>
+
+                <tr>
+                    <td>Wrong Answer</td>
+                    <td id="WrongAns"></td>
+                </tr>
+
+                <tr>
+                    <td>Percentage</td>
+                    <td id="Percentage"></td>
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td id="Result"></td>
+                </tr>
+            </table>
+            <div class="TryAgian">
+                <button><a href="quiz.html">Try Agian</a></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
